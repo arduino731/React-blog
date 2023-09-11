@@ -1,6 +1,6 @@
 {
   "homepage": "http://van-vlymen.com/",
-  "name": "blog",
+  "name": "blogs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
