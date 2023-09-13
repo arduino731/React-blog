@@ -6,7 +6,7 @@ import useFetch from "./useFetch";
 // console.log(file.blogs);
 
 const Home = () => {
-  const { error, isPending, data: blogs } = useFetch('http://localhost:3000/blogs')
+  const { error, isPending, data: blogs } = useFetch('localhost:3000/blogs')
   // const { error, isPending, data: blogs } = useFetch(file.blogs);
 
   return (
