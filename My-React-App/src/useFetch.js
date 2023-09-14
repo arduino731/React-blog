@@ -14,9 +14,11 @@ const useFetch = (url) => {
         if (!res.ok) { // error coming back from server
           throw Error('could not fetch the data for that resource');
         } 
+        // console.log(res)
         return res.json();
       })
       .then(data => {
+        
         setIsPending(false);
         setData(data);
         setError(null);
