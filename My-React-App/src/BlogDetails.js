@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, error, isPending } = useFetch('http://localhost:3001/blogs/' + id);
+  const { data: blog, error, isPending } = useFetch('https://my-json-server.typicode.com/arduino731/React-portfolio/blogs/' + id);
   const history = useHistory();
 
   const handleClick = () => {
-    fetch('http://localhost:3001/blogs/' + blog.id, {
+    fetch('https://my-json-server.typicode.com/arduino731/React-portfolio/blogs/' + blog.id, {
       method: 'DELETE'
     }).then(() => {
       history.push('/');
