@@ -5,7 +5,7 @@ const Home = () => {
   // const { error, isPending, data: blogs } = useFetch('localhost:3000/blogs')
   // const { error, isPending, data: blogs } = useFetch('https://my-json-server.typicode.com/arduino731/React-portfolio/blogs')
   // const { error, isPending, data: blogs } = useFetch('https://arduino731.github.io/data/db.json')
-  const { error, isPending, data: blogs } = useFetch("./data/db.json");
+  const { error, isPending, data: blogs } = useFetch("/data/db.json");
   
 
   return (
